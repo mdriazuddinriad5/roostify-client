@@ -55,10 +55,11 @@ const NavBar = () => {
                                 <Link to={link.link}>{link.name}</Link>
                             </li>))
                     }
-                    <button className="md:hidden bg-[#ff385c] hover:bg-[#ff274e] text-white font-medium py-2 px-4 rounded-lg transition duration-300 ease-in-out">Login</button>
+                    <Link to={'/login'}><button className="md:hidden bg-[#ff385c] hover:bg-[#ff274e] text-white font-medium py-2 px-4 rounded-lg transition duration-300 ease-in-out">Login</button></Link>
+
                 </ul>
 
-                <button className="hidden md:inline-block bg-[#ff385c] hover:bg-[#ff274e] text-white font-medium py-2 px-4 rounded-lg transition duration-300 ease-in-out">Login</button>
+                <Link to={'/login'}><button className="hidden md:inline-block bg-[#ff385c] hover:bg-[#ff274e] text-white font-medium py-2 px-4 rounded-lg transition duration-300 ease-in-out">Login</button></Link>
 
             </div>
 
