@@ -48,7 +48,7 @@ const NavBar = () => {
                     {isOpen ? <FaXmark></FaXmark> : <HiMenu></HiMenu>}
                 </div>
 
-                <ul className={`md:flex pl-9 md:pl-0 md:items-center  md:pb-0 pb-12 md:z-auto z-[1] absolute md:static left-0 w-full md:w-auto bg-white transition-all duration-500 ease-in ${isOpen ? 'top-120' : 'top-[-490px]'}`}>
+                <ul className={`md:flex pl-9 md:pl-0 md:items-center  md:pb-0 pb-12 md:z-auto z-[10] absolute md:static left-0 w-full md:w-auto bg-white transition-all duration-500 ease-in ${isOpen ? 'top-120' : 'top-[-490px]'}`}>
                     {
                         links.map((link, idx) => (
                             <li key={idx} className="font-medium text-gray-500 my-7 md:my-0 md:ml-8">

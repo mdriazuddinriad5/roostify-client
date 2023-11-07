@@ -1,16 +1,16 @@
 [
     {
         "roomNumber": 101,
-        "roomDescription": "The Deluxe King Suite offers a luxurious experience with a spacious 450 sq. ft. room. It's perfect for couples or solo travelers looking for a comfortable stay. Enjoy a beautiful view from your window. Price per night is $250, and it comes with special offers. The room is available for your stay from November 15, 2023. Guests have praised the room's fantastic view and comfort.",
+        "roomDescription": "The Deluxe King Suite (Room 101) is the epitome of luxury and comfort. With a spacious room and stunning views, it offers a tranquil haven for travelers seeking an exceptional experience. The room's tasteful decor and furnishings create an inviting atmosphere, making it ideal for couples or solo travelers. The large windows provide breathtaking vistas, adding to the room's allure. Guests have consistently praised its comfort and remarkable view, making it a memorable choice for those looking to indulge in a touch of opulence during their stay.",
         "pricePerNight": 250,
         "roomSize": 450,
         "availability": "Available",
         "roomImages": [
-            "https://i.ibb.co/frCbhy5/5954284664-8406613d39-o.jpg",
-            "https://i.ibb.co/4RHgc5k/6050809524-76451262a9-o.jpg",
-            "https://i.ibb.co/MMVMs1m/14433640759-7848459353-o.jpg",
-            "https://i.ibb.co/cTQwNrC/adam-winger-f-Acloea-PA-c-unsplash.jpg",
-            "https://i.ibb.co/CtDB5tr/adam-winger-VGs8z60y-T2c-unsplash.jpg"
+            "https://i.ibb.co/qMRrz3q/334883199-738945257726131-6261967648256654171-n.jpg",
+            "https://i.ibb.co/jkrqDbj/334883486-1893438831022159-7504109146584514068-n.jpg",
+            "https://i.ibb.co/hcV9pbT/334893625-869361267486132-8311930238225545309-n.jpg",
+            "https://i.ibb.co/bRm2wJ7/337287304-179003147895222-2432718894189408307-n.jpg",
+            "https://i.ibb.co/fQH1hx0/340119185-237226722143081-4643881612239035899-n.jpg"
         ],
         "specialOffers": "10% off for a 3-night stay",
         "date": "2023-11-15",
@@ -18,16 +18,16 @@
     },
     {
         "roomNumber": 102,
-        "roomDescription": "The Standard Double Room is ideal for budget-conscious travelers. With a room size of 300 sq. ft., it's a comfortable option for a short stay. The price per night is $150, and special offers are available for longer stays. The room is available from November 20, 2023. One guest found it to be a decent room for the price.",
+        "roomDescription": "The Standard Double Room (Room 102) is tailored for budget-conscious travelers seeking a comfortable and convenient option for their short-term stay. While it may not boast the extravagance of larger suites, it has all the necessary amenities to ensure a pleasant stay. The room's simplicity is complemented by its practicality, making it an excellent choice for those on a tight budget or with a busy schedule during their visit.",
         "pricePerNight": 150,
         "roomSize": 300,
         "availability": "Available",
         "roomImages": [
-            "https://i.ibb.co/2F0h47h/albert-vincent-wu-Akqn-ZZR1o-L4-unsplash.jpg",
-            "https://i.ibb.co/q0Q9wgV/ali-inay-0h9-Lsn-Y13-Hs-unsplash.jpg",
-            "https://i.ibb.co/WxxHMN5/andrew-neel-Rbt-VCKGy-Y-unsplash.jpg",
-            "https://i.ibb.co/y0c2S74/benjamin-child-0s-T9-Yh-Ng-SEs-unsplash.jpg",
-            "https://i.ibb.co/j8Mmhsy/christa-grover-x-B1e98-Sv4-VI-unsplash.jpg"
+            "https://i.ibb.co/nrZ767x/343383473-2337984626383647-3956548817938189723-n.jpg",
+            "https://i.ibb.co/0r1s0Tt/343800482-138638912406992-8950425679939659968-n.jpg",
+            "https://i.ibb.co/fQvM27N/346023058-858603772540335-2061714148062758398-n.jpg",
+            "https://i.ibb.co/LpG5Qwg/346098814-507771288110251-6775168208031934554-n.jpg",
+            "https://i.ibb.co/L6qd06x/346144208-226931590086285-2928960603932994416-n.jpg"
         ],
         "specialOffers": "15% off for a 5-night stay",
         "date": "2023-11-20",
@@ -35,16 +35,16 @@
     },
     {
         "roomNumber": 103,
-        "roomDescription": "The Luxury Ocean View Suite is a top choice for guests who want an unforgettable experience. It offers a large room with a room size of 550 sq. ft. and is unavailable currently. The price per night is $350. Reviews from previous guests are not available.",
+        "roomDescription": "The Luxury Ocean View Suite (Room 103) is a haven of grandeur. With a room designed to offer spacious and opulent living, this suite is nothing short of extraordinary. The room itself is adorned with lavish decor and furnishings, exuding elegance and sophistication. Regrettably, it is currently unavailable.",
         "pricePerNight": 350,
         "roomSize": 550,
         "availability": "Unavailable",
         "roomImages": [
-            "https://i.ibb.co/q0qjBVy/dada-design-k6-Cw-STSu-Oaw-unsplash.jpg",
-            "https://i.ibb.co/Lx3d5bn/dada-design-KDPmuv6y-FDI-unsplash.jpg",
-            "https://i.ibb.co/JpxP6Xr/dada-design-mp-P3o5q0-Opg-unsplash.jpg",
-            "https://i.ibb.co/X4tRXmh/dada-design-Qu-Fl-LPJ26-Y-unsplash.jpg",
-            "https://i.ibb.co/DWz44G4/fernando-alvarez-rodriguez-M7-Gdd-Pq-Jowg-unsplash.jpg"
+            "https://i.ibb.co/QpLJ5yc/348360895-962196855127335-5189574969976579758-n.jpg",
+            "https://i.ibb.co/SQZjx1G/348379592-6345043795565451-1964290613538318763-n.jpg",
+            "https://i.ibb.co/LrYWFvG/348384907-620965443340294-1070294843405007596-n.jpg",
+            "https://i.ibb.co/xYhM18m/355051267-6166656286763496-7322243902303558528-n.jpg",
+            "https://i.ibb.co/PFTXHzT/358020688-813090923794741-373191573561059555-n.jpg"
         ],
         "specialOffers": "N/A",
         "date": "N/A",
@@ -52,16 +52,16 @@
     },
     {
         "roomNumber": 104,
-        "roomDescription": "The Cozy Single Room is perfect for solo travelers. It offers a compact room with a room size of 200 sq. ft. The price per night is $100, and there are special offers for extended stays. The room is available from November 10, 2023. There are no guest reviews available.",
+        "roomDescription": "The Cozy Single Room (Room 104) is a modest yet charming accommodation designed especially for solo travelers. It provides a snug retreat with all the essential amenities for a comfortable stay. The room's inviting decor and warm ambiance create a tranquil setting that guarantees a restful night's sleep. Whether you are on a brief business trip or exploring the city on your own, the Cozy Single Room ensures a pleasant and peaceful stay, allowing you to recharge for your next adventure.",
         "pricePerNight": 100,
         "roomSize": 200,
         "availability": "Available",
         "roomImages": [
-            "https://i.ibb.co/jhfJd63/frames-for-your-heart-z-SG-kd-L6vw-unsplash.jpg",
-            "https://i.ibb.co/z89k6rM/giorgio-trovato-g-SZclvk-R4-Ok-unsplash.jpg",
-            "https://i.ibb.co/Nn19d1G/hayffield-l-x-Ftkrgt-Ja-XI-unsplash.jpg",
-            "https://i.ibb.co/FXMPhsT/huy-nguyen-m-VLMZi-ILyx-M-unsplash.jpg",
-            "https://i.ibb.co/5GJ9yKQ/isaac-quesada-xc4oxg-Ab-Dmw-unsplash.jpg"
+            "https://i.ibb.co/gWBkzym/362301690-623161593215156-8251445967613795102-n.jpg",
+            "https://i.ibb.co/ZHdbGSy/369053715-351022044051304-2288498137774786027-n.jpg",
+            "https://i.ibb.co/d20DDmV/370257340-254661237238928-4305036916975037745-n.jpg",
+            "https://i.ibb.co/fxsPcj3/370312163-645903704409398-5848297253245193107-n.jpg",
+            "https://i.ibb.co/qg176pT/370379168-307629548514009-6684550972022097424-n.jpg"
         ],
         "specialOffers": "20% off for a 7-night stay",
         "date": "2023-11-10",
@@ -69,16 +69,16 @@
     },
     {
         "roomNumber": 105,
-        "roomDescription": "The Executive Suite is a spacious choice with a room size of 500 sq. ft. It's perfect for travelers who want extra comfort. The price per night is $300, and special offers are available. The room is available from November 25, 2023. Guest reviews are not available.",
+        "roomDescription": "The Executive Suite (Room 105) is a spacious and comfortable choice for travelers who appreciate a little extra room to relax. With a sizeable area, this suite offers ample space for you to unwind. While it doesn't boast any specific views or luxurious features, it provides a serene and uncluttered environment where you can enjoy a hassle-free stay.",
         "pricePerNight": 300,
         "roomSize": 500,
         "availability": "Available",
         "roomImages": [
-            "https://i.ibb.co/0nJsHhG/iwood-R5v8-Xtc0ecg-unsplash.jpg",
-            "https://i.ibb.co/gyQMMD0/jilbert-ebrahimi-kj4f-RRj5-Tqc-unsplash.jpg",
-            "https://i.ibb.co/pPqXJdH/juliia-abramova-u-Vs-R-IX-n0-Q-unsplash.jpg",
-            "https://i.ibb.co/kJ4JtB5/kam-idris-kyt0-Pk-BSCNQ-unsplash.jpg",
-            "https://i.ibb.co/FzQHcJj/kenny-eliason-i-Aftd-Icgp-Fc-unsplash.jpg"
+            "https://i.ibb.co/WBCYg8t/371461068-721681865993751-4128538721892354225-n.jpg",
+            "https://i.ibb.co/VDVRwJv/371524994-230576750040912-74589632385431759-n.jpg",
+            "https://i.ibb.co/zGQgkYm/371535418-915502842908680-1713141213175502912-n.jpg",
+            "https://i.ibb.co/HDmby4Z/375208303-579575777623835-5250150320703772921-n.jpg",
+            "https://i.ibb.co/2g4z90M/375208303-653573550245289-5971841601266707058-n.jpg"
         ],
         "specialOffers": "15% off for a 5-night stay",
         "date": "2023-11-25",
@@ -86,16 +86,16 @@
     },
     {
         "roomNumber": 106,
-        "roomDescription": "The Standard Queen Room offers a comfortable and affordable stay. It has a room size of 320 sq. ft. The price per night is $180, with special offers for longer stays. The room is available from November 12, 2023. There are no guest reviews available.",
+        "roomDescription": "The Standard Queen Room (Room 106) is a sensible choice for those seeking a comfortable and reasonably priced accommodation. While it might not offer the grandeur of more expansive suites, it is well-suited for a budget-friendly city stay. The room's simplicity ensures an easy-going and affordable experience for your visit.",
         "pricePerNight": 180,
         "roomSize": 320,
         "availability": "Available",
         "roomImages": [
-            "https://i.ibb.co/WGcm3Km/khach-s-n-tinh-nhan-venice-1-hotel-FL2cq-Ggn-WQ-unsplash.jpg",
-            "https://i.ibb.co/4SjVnhp/vojtech-bruzek-Yrxr3bs-Pd-S0-unsplash.jpg",
-            "https://i.ibb.co/H4Fx2VB/point3d-commercial-imaging-ltd-GUno-Fet-WJM-unsplash.jpg",
-            "https://i.ibb.co/W2s4nFs/point3d-commercial-imaging-ltd-i1kz-Mm-WYQT4-unsplash.jpg",
-            "https://i.ibb.co/ypWSs3W/point3d-commercial-imaging-ltd-k-CSlhh-C-Ch8-unsplash.jpg"
+            "https://i.ibb.co/sssFMKJ/377160519-686497153455522-2546640256707038936-n.jpg",
+            "https://i.ibb.co/mNbStqL/377246330-891249701963471-216010036131735032-n.jpg",
+            "https://i.ibb.co/0Zd9Xy9/379907132-2531648967001669-8561627948194066260-n.jpg",
+            "https://i.ibb.co/2gD3f2w/385534638-690835076338113-2819599422888677406-n.jpg",
+            "https://i.ibb.co/hcM2M1P/385544184-193977297084777-2017750326472798340-n.jpg"
         ],
         "specialOffers": "10% off for a 4-night stay",
         "date": "2023-11-12",
@@ -103,16 +103,16 @@
     },
     {
         "roomNumber": 107,
-        "roomDescription": "The Family Suite is designed for families, offering a spacious room with a room size of 600 sq. ft. The price per night is $280, and it's currently available. Guest reviews are not available.",
+        "roomDescription": "The Family Suite (Room 107) is tailored to meet the needs of traveling families. With a spacious room, this suite offers an abundance of room for families to stretch out and relax. It is well-appointed for those traveling with children, providing a spacious and comfortable environment for your stay.",
         "pricePerNight": 280,
         "roomSize": 600,
         "availability": "Available",
         "roomImages": [
-            "https://i.ibb.co/B3f3WfD/point3d-commercial-imaging-ltd-v51t-Nk10o-U8-unsplash.jpg",
-            "https://i.ibb.co/mcv1rZ8/point3d-commercial-imaging-ltd-z-TKN10-KKQcc-unsplash.jpg",
-            "https://i.ibb.co/QkcCXhd/reisetopia-ouk-A5u-Mu-ALg-unsplash.jpg",
-            "https://i.ibb.co/yYJHZrP/reisetopia-p-SDe7e-Po0-Tc-unsplash.jpg",
-            "https://i.ibb.co/QpwpPZR/reisetopia-Y7-Wf-Cuz5tn0-unsplash.jpg"
+            "https://i.ibb.co/0GJdF43/385550566-541735481492687-2739871888663303381-n.jpg",
+            "https://i.ibb.co/pbC86Xt/385550836-875556910858851-4417261300533559947-n.jpg",
+            "https://i.ibb.co/dpvh00B/386439670-3260442407595193-3549609505953399605-n.jpg",
+            "https://i.ibb.co/WGJftks/395332366-1299281694114218-3568468661654998821-n.jpg",
+            "https://i.ibb.co/4SZqG4D/395468409-345130561392548-1717998932744233189-n.jpg"
         ],
         "specialOffers": "N/A",
         "date": "N/A",
@@ -120,16 +120,16 @@
     },
     {
         "roomNumber": 108,
-        "roomDescription": "The Economy Double Room is a budget-friendly choice for travelers. It offers a room size of 250 sq. ft. The price per night is $120, and it's available from November 16, 2023. There are no guest reviews available.",
+        "roomDescription": "The Economy Double Room (Room 108) is a cost-effective solution for city travelers. Offering practical and comfortable lodgings, it ensures you have everything you need for your stay without the frills. It is an excellent choice for travelers looking for a convenient and budget-friendly option for their visit.",
         "pricePerNight": 120,
         "roomSize": 250,
         "availability": "Available",
         "roomImages": [
-            "https://i.ibb.co/Sy23nGh/reisetopia-yo-Oe-M6i-XVPY-unsplash.jpg",
-            "https://i.ibb.co/F5664yF/roberto-nickson-emqn-SQw-QQDo-unsplash.jpg",
-            "https://i.ibb.co/jHfkw6t/shai-pal-56-WKMCORs-0-unsplash.jpg",
-            "https://i.ibb.co/LrC4ZjL/sidath-vimukthi-q-SB35-JVPe0s-unsplash.jpg",
-            "https://i.ibb.co/rdF7rsF/sidekix-media-Eo-TUCbv9-Jrs-unsplash.jpg"
+            "https://i.ibb.co/CbhN4B8/395629747-894283028282618-246661965776986497-n.jpg",
+            "https://i.ibb.co/b3LKdVy/396598553-1081453752848759-4200417278919640426-n.jpg",
+            "https://i.ibb.co/rsxwKRQ/396661529-330398676303811-7386316359219666830-n.jpg",
+            "https://i.ibb.co/5hxz5cc/396697212-1638073426721127-6171175556939095149-n.jpg",
+            "https://i.ibb.co/4RrfpFp/396722710-856092632854662-1648158444125313606-n.jpg"
         ],
         "specialOffers": "N/A",
         "date": "2023-11-16",
@@ -137,16 +137,16 @@
     },
     {
         "roomNumber": 109,
-        "roomDescription": "The Deluxe Twin Room is perfect for travelers seeking twin beds. It has a room size of 400 sq. ft. and is currently available. The price per night is $200. Guest reviews are not available.",
+        "roomDescription": "The Deluxe Twin Room (Room 109) is the perfect choice for those seeking twin beds. It offers a comfortable and welcoming ambiance. The room is adorned with inviting decor and furnishings, ensuring a cozy and restful environment for your stay. While it doesn't have any specific views or grand features, it provides a pleasant and practical setting for your visit.",
         "pricePerNight": 200,
         "roomSize": 400,
         "availability": "Available",
         "roomImages": [
-            "https://i.ibb.co/HpZbzmb/sidekix-media-g8tb9-SXq-ZVQ-unsplash.jpg",
-            "https://i.ibb.co/FbpyFXx/spacejoy-v-Oa-PSimwg4-unsplash.jpg",
-            "https://i.ibb.co/WyK5cP9/spacejoy-YI2-Ykya-REHk-unsplash.jpg",
-            "https://i.ibb.co/vDxWR1H/tamara-malaniy-X-f12-TWUE4-U-unsplash.jpg",
-            "https://i.ibb.co/m9PwtPq/travis-chen-6y-Ye-Ml-SPX2-Y-unsplash.jpg"
+            "https://i.ibb.co/W3D0WYS/396763282-812681953993345-448595826110697512-n.jpg",
+            "https://i.ibb.co/GPcjF9C/398038231-1065692051278202-5570202939099703040-n.jpg",
+            "https://i.ibb.co/zFz44TL/398170912-715594100596832-6287068265617387019-n.jpg",
+            "https://i.ibb.co/6WzprHv/398269890-300360652860798-5134624016753531935-n.jpg",
+            "https://i.ibb.co/QKGvzwq/398284378-348612380877351-2851962625065243659-n.jpg"
         ],
         "specialOffers": "N/A",
         "date": "N/A",
@@ -154,16 +154,16 @@
     },
     {
         "roomNumber": 110,
-        "roomDescription": "The Executive King Suite offers a luxurious experience with a room size of 550 sq. ft. It's perfect for guests looking for extra comfort. The price per night is $320, with special offers available. The room is available from November 19, 2023. Guest reviews are not available.",
+        "roomDescription": "The Executive King Suite (Room 110) offers an extravagant experience for travelers who appreciate extra space and comfort. With a spacious room and luxurious furnishings, it's the ultimate choice for those looking to pamper themselves during their stay. The suite boasts an atmosphere of grandeur, making it a remarkable choice for guests who want to indulge in a touch of opulence.",
         "pricePerNight": 320,
         "roomSize": 550,
         "availability": "Available",
         "roomImages": [
-            "https://i.ibb.co/rdF7rsF/sidekix-media-Eo-TUCbv9-Jrs-unsplash.jpg",
-            "https://i.ibb.co/HpZbzmb/sidekix-media-g8tb9-SXq-ZVQ-unsplash.jpg",
-            "https://i.ibb.co/FbpyFXx/spacejoy-v-Oa-PSimwg4-unsplash.jpg",
-            "https://i.ibb.co/WyK5cP9/spacejoy-YI2-Ykya-REHk-unsplash.jpg",
-            "https://i.ibb.co/vDxWR1H/tamara-malaniy-X-f12-TWUE4-U-unsplash.jpg"
+            "https://i.ibb.co/xhP9jnD/398284383-688059889936339-3506028724124630200-n.jpg",
+            "https://i.ibb.co/KGLxmf5/398288299-1043644523638381-1886945126998232093-n.jpg",
+            "https://i.ibb.co/zPH98KT/398292768-335905685712284-6658943641905447843-n.jpg",
+            "https://i.ibb.co/pJM55ww/398308063-1063574641491258-8364175737333958201-n.jpg",
+            "https://i.ibb.co/yQqsrCY/398310833-1055392922156632-6781784538392904994-n.jpg"
         ],
         "specialOffers": "15% off for a 5-night stay",
         "date": "2023-11-19",
@@ -171,16 +171,16 @@
     },
     {
         "roomNumber": 111,
-        "roomDescription": "The Luxury Ocean View Suite is a top choice for guests looking for an unforgettable experience. It offers a large room with a room size of 600 sq. ft. The price per night is $350, and it's available from November 18, 2023. Guest reviews are not available.",
+        "roomDescription": "The Luxury Ocean View Suite (Room 111) is a top-tier option for guests looking for an unforgettable experience. With a generous room size and grandeur, this suite is nothing short of extraordinary. The room features opulent decor and lavish furnishings, exuding elegance and sophistication. Regrettably, it is currently unavailable.",
         "pricePerNight": 350,
         "roomSize": 600,
         "availability": "Available",
         "roomImages": [
-            "https://i.ibb.co/vDxWR1H/tamara-malaniy-X-f12-TWUE4-U-unsplash.jpg",
-            "https://i.ibb.co/m9PwtPq/travis-chen-6y-Ye-Ml-SPX2-Y-unsplash.jpg",
-            "https://i.ibb.co/WGcm3Km/khach-s-n-tinh-nhan-venice-1-hotel-FL2cq-Ggn-WQ-unsplash.jpg",
-            "https://i.ibb.co/4SjVnhp/vojtech-bruzek-Yrxr3bs-Pd-S0-unsplash.jpg",
-            "https://i.ibb.co/6ZcnbvM/pexels-max-rahubovskiy-6970068.jpg"
+            "https://i.ibb.co/CJBVkrY/398322200-740150354825839-8373589428338772950-n.jpg",
+            "https://i.ibb.co/Qjhty6h/398324438-331922029561853-7244869677206987191-n.jpg",
+            "https://i.ibb.co/8sp413f/398326625-6740385976040427-7139666042171460012-n.jpg",
+            "https://i.ibb.co/xMpzmSf/398328929-892757048863865-3856859785767219137-n.jpg",
+            "https://i.ibb.co/J36cgqc/398336382-870594731518306-6457246014692630870-n.jpg"
         ],
         "specialOffers": "N/A",
         "date": "N/A",
@@ -188,16 +188,16 @@
     },
     {
         "roomNumber": 112,
-        "roomDescription": "The Cozy Single Room is designed for solo travelers seeking a compact yet comfortable stay. The room size is 200 sq. ft. The price per night is $100, and it's currently unavailable. There are no guest reviews available.",
+        "roomDescription": "The Cozy Single Room (Room 112) is designed for solo travelers seeking a compact yet comfortable retreat. It ensures a peaceful and convenient stay, providing all the essentials without any unnecessary frills. The room's decor and ambiance create a soothing and inviting environment, making it an excellent choice for solo travelers exploring the city.",
         "pricePerNight": 100,
         "roomSize": 200,
         "availability": "Unavailable",
         "roomImages": [
-            "https://i.ibb.co/0nzKz7Z/point3d-commercial-imaging-ltd-Swg04-CP0b-U-unsplash.jpg",
-            "https://i.ibb.co/JQ1T7kF/point3d-commercial-imaging-ltd-e-K6-I7-RND57-E-unsplash.jpg",
-            "https://i.ibb.co/H4Fx2VB/point3d-commercial-imaging-ltd-GUno-Fet-WJM-unsplash.jpg",
-            "https://i.ibb.co/W2s4nFs/point3d-commercial-imaging-ltd-i1kz-Mm-WYQT4-unsplash.jpg",
-            "https://i.ibb.co/ypWSs3W/point3d-commercial-imaging-ltd-k-CSlhh-C-Ch8-unsplash.jpg"
+            "https://i.ibb.co/GpfKfv6/398339074-294872996748530-5775318471478256948-n.jpg",
+            "https://i.ibb.co/5MKR0Gj/398353969-258728266798729-9158019710972146985-n.jpg",
+            "https://i.ibb.co/FYMhNJC/398366985-3493804987504477-2034731408912290761-n-1.jpg",
+            "https://i.ibb.co/QHc8jvb/398370151-1645714145918241-8379616463743216165-n.jpg",
+            "https://i.ibb.co/51cRG3Z/398373489-7008082785934073-1649783747772748617-n-1.jpg"
         ],
         "specialOffers": "N/A",
         "date": "N/A",
@@ -205,16 +205,16 @@
     },
     {
         "roomNumber": 113,
-        "roomDescription": "The Executive Suite offers a spacious room with a room size of 500 sq. ft. It's perfect for travelers looking for extra comfort. The price per night is $300, and the room is available from November 28, 2023. Guest reviews are not available.",
+        "roomDescription": "The Executive Suite (Room 113) offers a spacious and comfortable space for your stay. With ample room to relax, it provides a hassle-free and straightforward environment for your city visit. While it doesn't boast any grand views or extravagant features, it ensures a comfortable and relaxed experience.",
         "pricePerNight": 300,
         "roomSize": 500,
         "availability": "Available",
         "roomImages": [
-            "https://i.ibb.co/Gczr3LK/morgan-lane-i-Mn-Sqm-T2-RGE-unsplash.jpg",
-            "https://i.ibb.co/jhfJd63/frames-for-your-heart-z-SG-kd-L6vw-unsplash.jpg",
-            "https://i.ibb.co/z89k6rM/giorgio-trovato-g-SZclvk-R4-Ok-unsplash.jpg",
-            "https://i.ibb.co/Nn19d1G/hayffield-l-x-Ftkrgt-Ja-XI-unsplash.jpg",
-            "https://i.ibb.co/FXMPhsT/huy-nguyen-m-VLMZi-ILyx-M-unsplash.jpg"
+            "https://i.ibb.co/wLPGjk9/398393075-1344242233124616-1127027815902618627-n.jpg",
+            "https://i.ibb.co/6RYGNQF/398422385-902431284833201-2039988466030284834-n.jpg",
+            "https://i.ibb.co/xzGtYTh/398424835-992187378549134-7955288586857286008-n.jpg",
+            "https://i.ibb.co/c3Wz4vP/398467382-336008605744721-8308437549775450439-n.jpg",
+            "https://i.ibb.co/SdTk3VJ/398471139-1456463851578852-8699533372224363150-n.jpg"
         ],
         "specialOffers": "N/A",
         "date": "N/A",
@@ -222,16 +222,16 @@
     },
     {
         "roomNumber": 114,
-        "roomDescription": "The Standard Queen Room provides a comfortable and affordable stay. It has a room size of 320 sq. ft. The price per night is $180, and the room is available from November 17, 2023. There are no guest reviews available.",
+        "roomDescription": "The Standard Queen Room (Room 114) is a practical and affordable choice for your city stay. While it may not offer the luxury of larger suites, it provides the essentials for a comfortable and budget-friendly stay. The room's simplicity ensures a straightforward and hassle-free experience during your visit.",
         "pricePerNight": 180,
         "roomSize": 320,
         "availability": "Available",
         "roomImages": [
-            "https://i.ibb.co/rdF7rsF/sidekix-media-Eo-TUCbv9-Jrs-unsplash.jpg",
-            "https://i.ibb.co/HpZbzmb/sidekix-media-g8tb9-SXq-ZVQ-unsplash.jpg",
-            "https://i.ibb.co/FbpyFXx/spacejoy-v-Oa-PSimwg4-unsplash.jpg",
-            "https://i.ibb.co/WyK5cP9/spacejoy-YI2-Ykya-REHk-unsplash.jpg",
-            "https://i.ibb.co/vDxWR1H/tamara-malaniy-X-f12-TWUE4-U-unsplash.jpg"
+            "https://i.ibb.co/wdNv3jq/398491164-1379835409296699-9120242760078819675-n.jpg",
+            "https://i.ibb.co/4S8qzJq/399936910-245934291508908-2628950020969210388-n.jpg",
+            "https://i.ibb.co/PwJHF9y/399940222-1351419705748065-1688668114392996342-n.jpg",
+            "https://i.ibb.co/ZgydxZq/399992506-693996709350351-1116579486114255341-n.jpg",
+            "https://i.ibb.co/6RYGNQF/398422385-902431284833201-2039988466030284834-n.jpg"
         ],
         "specialOffers": "N/A",
         "date": "N/A",
@@ -239,16 +239,16 @@
     },
     {
         "roomNumber": 115,
-        "roomDescription": "The Family Suite is designed for families, offering a spacious room with a room size of 600 sq. ft. The price per night is $280, and it's currently unavailable. Special offers are available. There are no guest reviews available.",
+        "roomDescription": "The Family Suite (Room 115) is designed with families in mind, offering a spacious and comfortable room for your stay. It provides an inviting and hassle-free environment for those traveling with children, ensuring an enjoyable and convenient experience.",
         "pricePerNight": 280,
         "roomSize": 600,
         "availability": "Unavailable",
         "roomImages": [
-            "https://i.ibb.co/f1tvDwR/pexels-quang-nguyen-vinh-14917460.jpg",
-            "https://i.ibb.co/zZKMkJM/pexels-rachel-claire-4846446.jpg",
-            "https://i.ibb.co/rMG7L2g/pexels-rachel-claire-6123276.jpg",
-            "https://i.ibb.co/WcVWfgg/pexels-ricardo-cacho-15303762.jpg",
-            "https://i.ibb.co/pyjFN4p/pexels-rosie-c-14746040.jpg"
+            "https://i.ibb.co/xzGtYTh/398424835-992187378549134-7955288586857286008-n.jpg",
+            "https://i.ibb.co/CJBVkrY/398322200-740150354825839-8373589428338772950-n.jpg",
+            "https://i.ibb.co/Qjhty6h/398324438-331922029561853-7244869677206987191-n.jpg",
+            "https://i.ibb.co/0GJdF43/385550566-541735481492687-2739871888663303381-n.jpg",
+            "https://i.ibb.co/pbC86Xt/385550836-875556910858851-4417261300533559947-n.jpg"
         ],
         "specialOffers": "15% off for a 5-night stay",
         "date": "N/A",
@@ -256,16 +256,16 @@
     },
     {
         "roomNumber": 116,
-        "roomDescription": "The Economy Double Room is a budget-friendly choice for travelers. It offers a room size of 250 sq. ft. The price per night is $120, and it's available from November 25, 2023. Special offers include free breakfast. There are no guest reviews available.",
+        "roomDescription": "The Economy Double Room (Room 116) is a budget-friendly option for travelers looking for practical and comfortable accommodations. It offers a simple and cozy space without any unnecessary frills, ensuring a convenient and affordable stay for your city visit.",
         "pricePerNight": 120,
         "roomSize": 250,
         "availability": "Available",
         "roomImages": [
-            "https://i.ibb.co/vd1Bt5g/pexels-suhel-vba-3659683.jpg",
-            "https://i.ibb.co/8rJG96z/pexels-vecislavas-popa-1743229.jpg",
-            "https://i.ibb.co/tqqWvHf/pexels-william-pearson-14645130.jpg",
-            "https://i.ibb.co/0nzKz7Z/point3d-commercial-imaging-ltd-Swg04-CP0b-U-unsplash.jpg",
-            "https://i.ibb.co/JQ1T7kF/point3d-commercial-imaging-ltd-e-K6-I7-RND57-E-unsplash.jpg"
+            "https://i.ibb.co/dpvh00B/386439670-3260442407595193-3549609505953399605-n.jpg",
+            "https://i.ibb.co/gWBkzym/362301690-623161593215156-8251445967613795102-n.jpg",
+            "https://i.ibb.co/ZHdbGSy/369053715-351022044051304-2288498137774786027-n.jpg",
+            "https://i.ibb.co/d20DDmV/370257340-254661237238928-4305036916975037745-n.jpg",
+            "https://i.ibb.co/QpLJ5yc/348360895-962196855127335-5189574969976579758-n.jpg"
         ],
         "specialOffers": "Free breakfast for all guests",
         "date": "2023-11-25",
@@ -273,16 +273,16 @@
     },
     {
         "roomNumber": 117,
-        "roomDescription": "The Deluxe Twin Room is perfect for travelers seeking twin beds. It has a room size of 400 sq. ft. and is currently available. The price per night is $200. Special offers are available. There are no guest reviews available.",
+        "roomDescription": "The Deluxe Twin Room (Room 117) is the perfect choice for travelers seeking twin beds and a cozy atmosphere. The room's decor and furnishings create a warm and inviting setting, ensuring a peaceful and comfortable environment for your stay. While it doesn't offer any specific views or extravagant features, it provides a pleasant and practical choice for your visit.",
         "pricePerNight": 200,
         "roomSize": 400,
         "availability": "Available",
         "roomImages": [
-            "https://i.ibb.co/H4Fx2VB/point3d-commercial-imaging-ltd-GUno-Fet-WJM-unsplash.jpg",
-            "https://i.ibb.co/W2s4nFs/point3d-commercial-imaging-ltd-i1kz-Mm-WYQT4-unsplash.jpg",
-            "https://i.ibb.co/ypWSs3W/point3d-commercial-imaging-ltd-k-CSlhh-C-Ch8-unsplash.jpg",
-            "https://i.ibb.co/B3f3WfD/point3d-commercial-imaging-ltd-v51t-Nk10o-U8-unsplash.jpg",
-            "https://i.ibb.co/mcv1rZ8/point3d-commercial-imaging-ltd-z-TKN10-KKQcc-unsplash.jpg"
+            "https://i.ibb.co/SQZjx1G/348379592-6345043795565451-1964290613538318763-n.jpg",
+            "https://i.ibb.co/hcV9pbT/334893625-869361267486132-8311930238225545309-n.jpg",
+            "https://i.ibb.co/bRm2wJ7/337287304-179003147895222-2432718894189408307-n.jpg",
+            "https://i.ibb.co/8sp413f/398326625-6740385976040427-7139666042171460012-n.jpg",
+            "https://i.ibb.co/xMpzmSf/398328929-892757048863865-3856859785767219137-n.jpg"
         ],
         "specialOffers": "N/A",
         "date": "N/A",
@@ -290,16 +290,16 @@
     },
     {
         "roomNumber": 118,
-        "roomDescription": "The Executive King Suite offers a luxurious experience with a room size of 550 sq. ft. It's perfect for guests looking for extra comfort. The price per night is $320, and the room is available from November 23, 2023. Special offers are not available. There are no guest reviews available.",
+        "roomDescription": "The Executive King Suite (Room 118) offers an indulgent experience with extra space and comfort. It's a top choice for guests who appreciate grandeur and luxury during their stay. The suite provides a lavish atmosphere, making it an excellent option for those who want to pamper themselves.",
         "pricePerNight": 320,
         "roomSize": 550,
         "availability": "Available",
         "roomImages": [
-            "https://i.ibb.co/QkcCXhd/reisetopia-ouk-A5u-Mu-ALg-unsplash.jpg",
-            "https://i.ibb.co/yYJHZrP/reisetopia-p-SDe7e-Po0-Tc-unsplash.jpg",
-            "https://i.ibb.co/QpwpPZR/reisetopia-Y7-Wf-Cuz5tn0-unsplash.jpg",
-            "https://i.ibb.co/Sy23nGh/reisetopia-yo-Oe-M6i-XVPY-unsplash.jpg",
-            "https://i.ibb.co/F5664yF/roberto-nickson-emqn-SQw-QQDo-unsplash.jpg"
+            "https://i.ibb.co/J36cgqc/398336382-870594731518306-6457246014692630870-n.jpg",
+            "https://i.ibb.co/GPcjF9C/398038231-1065692051278202-5570202939099703040-n.jpg",
+            "https://i.ibb.co/zFz44TL/398170912-715594100596832-6287068265617387019-n.jpg",
+            "https://i.ibb.co/sssFMKJ/377160519-686497153455522-2546640256707038936-n.jpg",
+            "https://i.ibb.co/mNbStqL/377246330-891249701963471-216010036131735032-n.jpg"
         ],
         "specialOffers": "N/A",
         "date": "N/A",
@@ -307,16 +307,16 @@
     },
     {
         "roomNumber": 119,
-        "roomDescription": "The Luxury Ocean View Suite is a top choice for guests looking for an unforgettable experience. It offers a large room with a room size of 600 sq. ft. The price per night is $350, and it's available from November 20, 2023. Special offers include a 20% discount and free spa access. There are no guest reviews available.",
+        "roomDescription": "The Luxury Ocean View Suite (Room 119) is the ultimate choice for guests seeking an unforgettable experience. It features a generous room size and opulent furnishings, creating an environment of elegance and sophistication. Regrettably, it is currently unavailable.",
         "pricePerNight": 350,
         "roomSize": 600,
         "availability": "Available",
         "roomImages": [
-            "https://i.ibb.co/jHfkw6t/shai-pal-56-WKMCORs-0-unsplash.jpg",
-            "https://i.ibb.co/LrC4ZjL/sidath-vimukthi-q-SB35-JVPe0s-unsplash.jpg",
-            "https://i.ibb.co/rdF7rsF/sidekix-media-Eo-TUCbv9-Jrs-unsplash.jpg",
-            "https://i.ibb.co/HpZbzmb/sidekix-media-g8tb9-SXq-ZVQ-unsplash.jpg",
-            "https://i.ibb.co/FbpyFXx/spacejoy-v-Oa-PSimwg4-unsplash.jpg"
+            "https://i.ibb.co/0Zd9Xy9/379907132-2531648967001669-8561627948194066260-n.jpg",
+            "https://i.ibb.co/nrZ767x/343383473-2337984626383647-3956548817938189723-n.jpg",
+            "https://i.ibb.co/0r1s0Tt/343800482-138638912406992-8950425679939659968-n.jpg",
+            "https://i.ibb.co/WBCYg8t/371461068-721681865993751-4128538721892354225-n.jpg",
+            "https://i.ibb.co/VDVRwJv/371524994-230576750040912-74589632385431759-n.jpg"
         ],
         "specialOffers": "20% off for a 3-night stay, free spa access",
         "date": "N/A",
@@ -324,16 +324,16 @@
     },
     {
         "roomNumber": 120,
-        "roomDescription": "The Cozy Single Room is designed for solo travelers seeking a compact yet comfortable stay. The room size is 200 sq. ft. The price per night is $100, and it's currently unavailable. There are no guest reviews available.",
+        "roomDescription": "The Cozy Single Room (Room 120) is the ideal choice for solo travelers seeking a compact yet comfortable stay in the heart of the city. It offers all the essentials for a convenient and hassle-free experience, ensuring a peaceful retreat for your solo adventure. The room's decor and furnishings create a warm and inviting ambiance, making it a welcoming choice for those looking for a tranquil stay.",
         "pricePerNight": 100,
         "roomSize": 200,
         "availability": "Unavailable",
         "roomImages": [
-            "https://i.ibb.co/WyK5cP9/spacejoy-YI2-Ykya-REHk-unsplash.jpg",
-            "https://i.ibb.co/vDxWR1H/tamara-malaniy-X-f12-TWUE4-U-unsplash.jpg",
-            "https://i.ibb.co/m9PwtPq/travis-chen-6y-Ye-Ml-SPX2-Y-unsplash.jpg",
-            "https://i.ibb.co/WGcm3Km/khach-s-n-tinh-nhan-venice-1-hotel-FL2cq-Ggn-WQ-unsplash.jpg",
-            "https://i.ibb.co/4SjVnhp/vojtech-bruzek-Yrxr3bs-Pd-S0-unsplash.jpg"
+            "https://i.ibb.co/zGQgkYm/371535418-915502842908680-1713141213175502912-n.jpg",
+            "https://i.ibb.co/qMRrz3q/334883199-738945257726131-6261967648256654171-n.jpg",
+            "https://i.ibb.co/jkrqDbj/334883486-1893438831022159-7504109146584514068-n.jpg",
+            "https://i.ibb.co/hcV9pbT/334893625-869361267486132-8311930238225545309-n.jpg",
+            "https://i.ibb.co/mNbStqL/377246330-891249701963471-216010036131735032-n.jpg"
         ],
         "specialOffers": "N/A",
         "date": "N/A",

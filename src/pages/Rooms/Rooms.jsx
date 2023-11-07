@@ -12,6 +12,7 @@ const Rooms = () => {
             .then(res => {
                 setRooms(res.data)
             })
+
     }, [])
 
 
@@ -48,6 +49,9 @@ const Rooms = () => {
                             room={room}>
                         </Room>)
                 }
+            </div>
+            <div className="flex justify-center">
+                <button className="btn ">Show All</button>
             </div>
         </div>
     );
