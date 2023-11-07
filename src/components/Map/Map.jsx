@@ -18,7 +18,7 @@ const MyMap = () => {
         <div id="map-loaded" className='my-5'>
             <h2 className="text-2xl text-center mb-2 font-semibold">Maps</h2>
             <div className='h-[60vh] w-full'>
-                <Map height={'60vh'} defaultCenter={[-37.84, 144.94]} defaultZoom={12}>
+                <Map height={'60vh'} defaultCenter={[-37.84, 144.94]} defaultZoom={11}>
                     {
                         locations.map((location, index) => (
                             <Marker
