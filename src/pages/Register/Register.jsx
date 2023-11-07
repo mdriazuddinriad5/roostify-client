@@ -93,7 +93,7 @@ const Register = () => {
     return (
         <div>
            
-            <div className=" mt-10 bg-base-200">
+            <div className=" mt-10 bg-base-200 lg:mb-10">
                 <div className="flex-col">
                     <div className="text-center mb-6">
                         <h1 className="text-3xl font-bold">Register now!</h1>

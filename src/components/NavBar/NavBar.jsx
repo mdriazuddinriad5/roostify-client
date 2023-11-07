@@ -1,11 +1,18 @@
 import { FaHotel } from "react-icons/fa";
 import { HiMenu } from "react-icons/hi";
 import { FaXmark } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import './NavBar.css'
+import useAuth from "../../Hooks/useAuth";
 
 const NavBar = () => {
+
+    const { user, logOut } = useAuth();
+
+    const handleLogOut = () => {
+        logOut().then().catch()
+    }
 
     const links = [
         { name: 'Home', link: '/' },
@@ -14,6 +21,8 @@ const NavBar = () => {
     ]
 
     const [isOpen, setIsOpen] = useState(false);
+
+
 
 
 
@@ -52,14 +61,52 @@ const NavBar = () => {
                     {
                         links.map((link, idx) => (
                             <li key={idx} className="font-medium text-gray-500 my-7 md:my-0 md:ml-8">
-                                <Link to={link.link}>{link.name}</Link>
+                                <NavLink onClick={() => setIsOpen(false)} to={link.link} className={({ isActive, isPending }) =>
+                                    isPending ? "pending" : isActive ? "text-[#008080] underline" : ""
+                                }>{link.name}</NavLink>
                             </li>))
                     }
-                    <Link to={'/login'}><button className="md:hidden bg-[#ff385c] hover:bg-[#ff274e] text-white font-medium py-2 px-4 rounded-lg transition duration-300 ease-in-out">Login</button></Link>
+
+                    <div className="md:hidden">
+                        {
+
+                            user ? <>
+
+                                <a onClick={handleLogOut} href=""><button className=" bg-[#ff385c] hover:bg-[#ff274e] text-white font-medium py-2 px-4 rounded-lg transition duration-300 ease-in-out">Sign Out</button></a>
+                                <div className="absolute flex items-center right-2 top-7">
+                                    <p className="mr-2 text-blue-400 font-bold ">{user.displayName}</p>
+                                    <img className="w-8 rounded-full mr-2" src={user.photoURL} />
+                                </div>
+                            </> :
+
+                                <Link to={'/login'}><button className=" bg-[#ff385c] hover:bg-[#ff274e] text-white font-medium py-2 px-4 rounded-lg transition duration-300 ease-in-out">Login</button></Link>
+
+
+                        }
+
+                    </div>
+
 
                 </ul>
 
-                <Link to={'/login'}><button className="hidden md:inline-block bg-[#ff385c] hover:bg-[#ff274e] text-white font-medium py-2 px-4 rounded-lg transition duration-300 ease-in-out">Login</button></Link>
+                <div className="hidden md:inline-flex md:items-center">
+                    {
+
+                        user ? <>
+
+                            <p className="mr-2 text-blue-400 font-bold ">{user.displayName}</p>
+                            <img className="w-8 rounded-full mr-2" src={user.photoURL} />
+
+                            <a onClick={handleLogOut} href=""><button className=" bg-[#ff385c] hover:bg-[#ff274e] text-white font-medium py-2 px-4 rounded-lg transition duration-300 ease-in-out">Sign Out</button></a>
+                        </> :
+
+                            <Link to={'/login'}><button className=" bg-[#ff385c] hover:bg-[#ff274e] text-white font-medium py-2 px-4 rounded-lg transition duration-300 ease-in-out">Login</button></Link>
+
+
+                    }
+
+                </div>
+
 
             </div>
 
