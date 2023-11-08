@@ -1,7 +1,16 @@
 import { Parallax } from 'react-parallax';
 import './ParallaxContainer.css'
+import Aos from "aos";
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 
 const ParallaxContainer = () => {
+
+
+    useEffect(()=>{
+        Aos.init({duration:3000});
+    },[])
+
     const images = [
         {
             "url": "https://i.ibb.co/vcNnb0m/14353202695-8b9ed99d61-k.jpg",
@@ -38,7 +47,7 @@ const ParallaxContainer = () => {
 
 
     return (
-        <div>
+        <div data-aos='fade-up'>
 
             <h2 className='text-center font-bold text-gray-900 my-4 mb-6 text-3xl'>Stunning Imagery</h2>
 

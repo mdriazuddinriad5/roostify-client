@@ -5,6 +5,10 @@ import useAuth from "../../Hooks/useAuth";
 import { useState } from "react";
 import { useEffect } from "react";
 import { Helmet } from "react-helmet";
+import Aos from "aos";
+import 'aos/dist/aos.css'
+
+
 
 
 
@@ -16,6 +20,9 @@ const Register = () => {
     const [success, setSuccess] = useState('');
 
 
+    useEffect(()=>{
+        Aos.init({duration:3000});
+    },[])
 
     useEffect(() => {
         if (registerError) {
@@ -97,7 +104,7 @@ const Register = () => {
                 <title>Register</title>
             </Helmet>
 
-            <div className=" mt-10 bg-base-200 lg:mb-10">
+            <div data-aos='fade-up' className=" mt-10 bg-base-200 lg:mb-10">
                 <div className="flex-col">
                     <div className="text-center mb-6">
                         <h1 className="text-3xl font-bold">Register now!</h1>

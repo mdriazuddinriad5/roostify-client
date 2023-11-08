@@ -1,8 +1,13 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 const Banner = () => {
+
+    useEffect(()=>{
+        Aos.init({duration:3000});
+    },[])
 
     const [rooms, setRooms] = useState([]);
 
@@ -15,7 +20,7 @@ const Banner = () => {
 
     }, [])
     return (
-        <div className="carousel w-full my-4">
+        <div data-aos='flip-right' className="carousel w-full my-4">
             {rooms.slice(0, 4).map((room, index) => (
                 <div key={index} className={`carousel-item relative w-full ${index === 0 ? 'current' : ''}`}>
                     <img src={room.roomImages[1]} className="w-full h-[60vh]" alt={`Room ${index + 1}`} />

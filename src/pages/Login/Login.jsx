@@ -3,7 +3,8 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import useAuth from "../../Hooks/useAuth";
 import { Helmet } from "react-helmet";
-
+import Aos from "aos";
+import 'aos/dist/aos.css'
 
 
 
@@ -16,6 +17,9 @@ const Login = () => {
     const [loginError, setLoginError] = useState('');
 
 
+    useEffect(() => {
+        Aos.init({ duration: 3000 });
+    }, [])
 
     useEffect(() => {
         if (loginError) {
@@ -89,7 +93,7 @@ const Login = () => {
                 <title>Sign In</title>
             </Helmet>
 
-            <div className=" mt-10 bg-base-200 lg:mb-28">
+            <div data-aos='fade-up' className=" mt-10 bg-base-200 lg:mb-28">
                 <div className="flex-col">
                     <div className="text-center mb-6">
                         <h1 className="text-3xl font-bold">Login now!</h1>
