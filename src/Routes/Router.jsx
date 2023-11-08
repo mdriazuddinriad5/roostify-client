@@ -7,6 +7,7 @@ import Bookings from "../pages/Bookings/Bookings";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import PrivateRoute from "./PrivateRouter";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 
 
@@ -14,6 +15,7 @@ const Router = createBrowserRouter([
     {
         path: '/',
         element: <MainLayout></MainLayout>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: ([
             {
                 path: '/',
