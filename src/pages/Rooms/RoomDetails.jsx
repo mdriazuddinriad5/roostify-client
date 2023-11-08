@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
 import { useLoaderData, useLocation, useNavigate } from "react-router-dom";
 import { CiBookmarkCheck } from "react-icons/ci";
@@ -7,6 +7,7 @@ import { AiOutlineStar } from "react-icons/ai";
 import Swal from "sweetalert2";
 import useAuth from "../../Hooks/useAuth";
 import moment from "moment";
+import Review from "./Review";
 
 
 const RoomDetails = () => {
@@ -22,7 +23,7 @@ const RoomDetails = () => {
 
     const isRoomAvailable = async (roomId, selectedDate) => {
         try {
-            const response = await fetch(`http://localhost:5000/bookings?roomId=${roomId}&selectedDate=${selectedDate}`);
+            const response = await fetch(`http://localhost:5000/bookings?roomId=${roomId}&selectedDate=${selectedDate}`, { credentials: 'include' });
             const data = await response.json();
 
             if (Array.isArray(data)) {
@@ -46,7 +47,6 @@ const RoomDetails = () => {
 
 
     const handleBookNow = async () => {
-
 
         const selectedDate = new Date(bookingDate);
         const currentDate = new Date();
@@ -132,6 +132,71 @@ const RoomDetails = () => {
     };
 
 
+    const [reviewData, setReviewData] = useState({
+        username: '',
+        rating: '',
+        comment: '',
+    });
+
+    const handleReviewChange = (e) => {
+        const { name, value } = e.target;
+        setReviewData({
+            ...reviewData,
+            [name]: value,
+        });
+    };
+
+
+    const handleReviewSubmit = async (e) => {
+        e.preventDefault();
+
+        if (!user) {
+            Swal.fire({
+                title: 'Failed',
+                text: 'You need to sign in to review',
+                icon: 'error',
+                confirmButtonText: 'OK'
+            });
+            return;
+        }
+        fetch('http://localhost:5000/reviews', {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(reviewData),
+
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.insertedId) {
+                    Swal.fire({
+                        title: 'Great',
+                        text: 'Thanks for your feedback',
+                        icon: 'success',
+                        confirmButtonText: 'OK'
+                    });
+                    setReviewData({
+                        username: '',
+                        rating: '',
+                        comment: ''
+                    });
+                }
+            })
+
+
+    };
+
+
+    const [reviews, setReviews] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:5000/reviews')
+            .then(res => res.json())
+            .then(data => setReviews(data))
+    }, [])
+
+
     return (
         <div>
 
@@ -141,6 +206,7 @@ const RoomDetails = () => {
                 }
 
             </Marquee>
+
 
 
             <div className="grid md:grid-cols-3 grid-cols-1 gap-6 w-3/4 mx-auto mb-5">
@@ -185,6 +251,10 @@ const RoomDetails = () => {
                             <p>Price per night: {pricePerNight}</p>
                         </div>
 
+                        <div className="grid md:grid-cols-3 gap-2">
+                            {reviews.map((rev, idx) => <Review key={idx} rev={rev}></Review>)}
+                        </div>
+
                     </div>
                 </div>
                 <div>
@@ -201,6 +271,46 @@ const RoomDetails = () => {
                                 <button onClick={handleBookNow} className="btn btn-primary">Book Now</button>
                             </div>
                         </div>
+                    </div>
+                    <div>
+                        <h2 className="text-2xl text-gray-800 font-bold my-3 text-center">Leave a Review</h2>
+                        <form onSubmit={handleReviewSubmit}>
+                            <div className="mb-4">
+                                <label htmlFor="username" className="block font-semibold text-gray-700">Username:</label>
+                                <input
+                                    type="text"
+                                    id="username"
+                                    name="username"
+                                    value={reviewData.username}
+                                    onChange={handleReviewChange}
+                                    required
+                                    className="border rounded-md p-2 w-full"
+                                />
+                            </div>
+                            <div className="mb-4">
+                                <label htmlFor="rating" className="block font-semibold text-gray-700">Rating (1-5):</label>
+                                <input
+                                    type="number"
+                                    id="rating"
+                                    name="rating"
+                                    value={reviewData.rating}
+                                    onChange={handleReviewChange}
+                                    required
+                                    className="border rounded-md p-2 w-full"
+                                />
+                            </div> <div className="mb-4">
+                                <label htmlFor="comment" className="block font-semibold text-gray-700">Comment:</label>
+                                <textarea
+                                    id="comment"
+                                    name="comment"
+                                    value={reviewData.comment}
+                                    onChange={handleReviewChange}
+                                    required
+                                    className="border rounded-md p-2 w-full"
+                                />
+                            </div>
+                            <button type="submit" className="btn btn-primary">Submit Review</button>
+                        </form>
                     </div>
                 </div>
 

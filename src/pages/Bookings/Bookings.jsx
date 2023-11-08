@@ -12,7 +12,7 @@ const Bookings = () => {
     const url = `http://localhost:5000/bookings?email=${user?.email}`
 
     useEffect(() => {
-        fetch(url)
+        fetch(url, { credentials: 'include' })
             .then(res => res.json())
             .then(data => {
                 if (data && data.length > 0) {
@@ -79,7 +79,7 @@ const Bookings = () => {
 
     const isRoomAvailable = async (roomId, selectedDate) => {
         try {
-            const response = await fetch(`http://localhost:5000/bookings?roomId=${roomId}&selectedDate=${selectedDate}`);
+            const response = await fetch(`http://localhost:5000/bookings?roomId=${roomId}&selectedDate=${selectedDate}`,  { credentials: 'include' });
             const data = await response.json();
 
             if (Array.isArray(data)) {

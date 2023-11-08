@@ -8,7 +8,7 @@ const Rooms = () => {
     const [sortBy, setSortBy] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/rooms')
+        axios.get('http://localhost:5000/rooms', { withCredentials: true })
             .then(res => {
                 setRooms(res.data)
             })
