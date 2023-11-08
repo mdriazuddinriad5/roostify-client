@@ -23,8 +23,8 @@ const Footer = () => {
             <footer className="relative z-50 footer footer-center mt-28 w-full py-10 bg-[#ffda79] text-base-content rounded">
                 <nav className="grid grid-flow-col gap-6">
                     <Link to={'/'}>Home</Link>
-                    <Link to={'/addProduct'}>Add Product</Link>
-                    <Link to={'/cart'}>My Cart</Link>
+                    <Link to={'/rooms'}>Rooms</Link>
+                    <Link to={'/bookings'}>My Bookings</Link>
                 </nav>
                 <nav>
                     <div className="grid grid-flow-col gap-4">

@@ -31,22 +31,7 @@ const ParallaxContainer = () => {
             "url": "https://i.ibb.co/vBFmDSH/patrick-robert-doyle-AH8z-KXq-FITA-unsplash.jpg",
             "caption": "Elevated Luxury"
         },
-        // {
-        //     "url": "https://i.ibb.co/T8hF1yR/point3d-commercial-imaging-ltd-5-BV56-Sdv-Lmo-unsplash.jpg",
-        //     "caption": "Modern Amenities"
-        // },
-        // {
-        //     "url": "https://i.ibb.co/sR7YFVt/tony-yakovlenko-l-Dxxe-AJr-Wp-E-unsplash.jpg",
-        //     "caption": "Contemporary Elegance"
-        // },
-        // {
-        //     "url": "https://i.ibb.co/xCnMpGs/visualsofdana-T5p-L6ci-En-I-unsplash.jpg",
-        //     "caption": "Rustic Charm"
-        // },
-        // {
-        //     "url": "https://i.ibb.co/4SjVnhp/vojtech-bruzek-Yrxr3bs-Pd-S0-unsplash.jpg",
-        //     "caption": "Urban Oasis"
-        // }
+
     ]
 
 
@@ -54,6 +39,9 @@ const ParallaxContainer = () => {
 
     return (
         <div>
+
+            <h2 className='text-center font-bold text-gray-900 my-4 mb-6 text-3xl'>Stunning Imagery</h2>
+
             {images.map((img, index) => (
 
                 <Parallax className='image' bgImage={img.url} key={index} strength={800}>
