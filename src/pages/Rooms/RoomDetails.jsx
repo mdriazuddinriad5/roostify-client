@@ -95,8 +95,8 @@ const RoomDetails = () => {
 
 
 
-            <div className="grid grid-cols-3 gap-6 w-3/4 mx-auto mb-5">
-                <div className="col-span-2">
+            <div className="grid md:grid-cols-3 grid-cols-1 gap-6 w-3/4 mx-auto mb-5">
+                <div className="md:col-span-2">
                     <div>
 
                         <h1 className="text-2xl text-gray-800 font-bold my-3 text-center">Room Details</h1>

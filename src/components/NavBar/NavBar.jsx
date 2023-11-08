@@ -46,7 +46,7 @@ const NavBar = () => {
 
     return (
         <div className="shadow w-full relative" id="navbar">
-            <div className="md:px-24 py-4 px-7 md:flex justify-between items-center ">
+            <div className=" py-4 px-7 md:flex justify-between items-center ">
                 <div className="flex text-2xl cursor-pointer items-center gap-2 ">
                     <FaHotel className="w-7 h-7 text-[#ff385c]"></FaHotel>
                     <span className="font-bold text-[#ff385c]">Roostify</span>
@@ -60,7 +60,7 @@ const NavBar = () => {
                 <ul className={`md:flex pl-9 md:pl-0 md:items-center  md:pb-0 pb-12 md:z-auto z-[10] absolute md:static left-0 w-full md:w-auto bg-white transition-all duration-500 ease-in ${isOpen ? 'top-120' : 'top-[-490px]'}`}>
                     {
                         links.map((link, idx) => (
-                            <li key={idx} className="font-medium text-gray-500 my-7 md:my-0 md:ml-8">
+                            <li key={idx} className="font-medium text-gray-500 my-7 md:my-0 md:ml-3 lg:ml-8">
                                 <NavLink onClick={() => setIsOpen(false)} to={link.link} className={({ isActive, isPending }) =>
                                     isPending ? "pending" : isActive ? "text-[#008080] underline" : ""
                                 }>{link.name}</NavLink>
