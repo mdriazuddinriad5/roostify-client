@@ -1,8 +1,8 @@
-Live Site Link: https://roostify-hotel.web.app/rooms
+Live Site Link: https://roostify-hotel.web.app/
 
 About this website
 
-  *  User Authentication: Utilizes JWT (JSON Web Tokens) for user authentication and authorization.
+  +  User Authentication: Utilizes JWT (JSON Web Tokens) for user authentication and authorization.
   *  Firebase Integration: Integrates Firebase for real-time data synchronization, file storage, and authentication.
   *  MongoDB Database: Uses MongoDB to store and manage data.
   *  CRUD Operations: Provides Create, Read, Update, and Delete functionality for data records.
