@@ -1,61 +1,86 @@
 import { useState } from "react";
 import Marquee from "react-fast-marquee";
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useLocation, useNavigate } from "react-router-dom";
 import { CiBookmarkCheck } from "react-icons/ci";
 import { GrDriveCage } from "react-icons/gr";
 import { AiOutlineStar } from "react-icons/ai";
 import Swal from "sweetalert2";
+import useAuth from "../../Hooks/useAuth";
 
 
 const RoomDetails = () => {
-    const { _id, roomDescription, pricePerNight, roomSize, availability, roomImages, specialOffers, date, review } = useLoaderData();
+    const { _id, roomNumber, roomDescription, pricePerNight, roomSize, availability, roomImages, specialOffers, date, review } = useLoaderData();
 
+    const { user } = useAuth();
+    const navigate = useNavigate();
+    const location = useLocation();
 
     const [bookingDate, setBookingDate] = useState('');
-    const [bookedDates, setBookedDates] = useState([]);
+
+
+
 
     const handleBookNow = () => {
 
-        if (!bookingDate) {
-            // Show an error SweetAlert if the date is not selected
-            Swal.fire({
-              title: 'Error',
-              text: 'Please select a booking date.',
-              icon: 'error',
-            });
-            return;
-          }
+        const date = bookingDate;
+        const email = user?.email;
+        const name = user?.displayName;
+        const img = roomImages[0];
+        const booking = {
+            email,
+            name,
+            img,
+            date,
+            price: pricePerNight,
+            roomNumber,
+            room_id: _id
+        }
 
 
-          if (bookedDates.includes(bookingDate)) {
-            // Show an error SweetAlert if the date is already booked
-            Swal.fire({
-              title: 'Error',
-              text: 'This date is already booked. Please choose another date.',
-              icon: 'error',
-            });
-            return;
-          }
+        if (user) {
 
-        Swal.fire({
-            title: 'Confirm Booking',
-            html: `Booking Date: ${bookingDate}<br>Price Per Night: $${pricePerNight}<br>Room Description: ${roomDescription}`,
-            icon: 'question',
-            showCancelButton: true,
-            confirmButtonText: 'Confirm',
-            cancelButtonText: 'Cancel',
-        }).then((result) => {
-            if (result.isConfirmed) {
-                // Implement your booking logic here
-                // For now, we'll just close the modal
-
-                setBookedDates([...bookedDates, bookingDate]);
-                
-                Swal.fire('Booking Confirmed!', '', 'success');
+            if (!bookingDate) {
+                Swal.fire({
+                    title: 'Error',
+                    text: 'Please select a booking date.',
+                    icon: 'error',
+                });
+                return;
             }
-        });
-    };
 
+
+
+            Swal.fire({
+                title: 'Confirm Booking',
+                html: `Booking Date: ${bookingDate}<br>Price Per Night: $${pricePerNight}<br>Room Description: ${roomDescription}`,
+                icon: 'question',
+                showCancelButton: true,
+                confirmButtonText: 'Confirm',
+                cancelButtonText: 'Cancel',
+            }).then((result) => {
+                if (result.isConfirmed) {
+
+                    fetch('http://localhost:5000/bookings', {
+                        method: 'POST',
+                        headers: {
+                            'content-type': 'application/json'
+                        },
+                        body: JSON.stringify(booking)
+                    })
+                        .then(res => res.json())
+                        .then(data => {
+                            console.log(data);
+                            if (data.insertedId) {
+                                Swal.fire('Booking Confirmed!', '', 'success');
+                            }
+                        })
+                }
+            });
+
+        } else {
+            navigate('/login', { state: location.pathname });
+        }
+    };
 
 
     return (

@@ -49,6 +49,8 @@ const Login = () => {
             setSuccess('Logged in successfully');
             e.target.reset();
             navigate(location?.state ? location.state : '/')
+
+        
         } catch (error) {
             console.error(error);
             console.log("Error code:", error.code); // Log the error code
