@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import Room from "./Room";
+import { Helmet } from "react-helmet";
 
 
 const Rooms = () => {
@@ -32,6 +33,9 @@ const Rooms = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Rooms</title>
+            </Helmet>
             <div className="my-4 flex justify-center">
                 <label className="mr-1">Sort By:</label>
                 <select value={sortBy} onChange={handleSortChange}>

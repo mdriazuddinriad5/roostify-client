@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 const Room = ({ room }) => {
@@ -5,6 +6,7 @@ const Room = ({ room }) => {
 
     return (
         <div>
+            
             <Link to={`/roomDetails/${_id}`}>
                 <div className="card bg-base-100 shadow-xl">
                     <figure><img className="w-full h-56" src={roomImages[2]} alt="" /></figure>

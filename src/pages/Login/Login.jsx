@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import useAuth from "../../Hooks/useAuth";
+import { Helmet } from "react-helmet";
 
 
 
@@ -14,7 +15,7 @@ const Login = () => {
     const [success, setSuccess] = useState('');
     const [loginError, setLoginError] = useState('');
 
-   
+
 
     useEffect(() => {
         if (loginError) {
@@ -50,7 +51,7 @@ const Login = () => {
             e.target.reset();
             navigate(location?.state ? location.state : '/')
 
-        
+
         } catch (error) {
             console.error(error);
             console.log("Error code:", error.code); // Log the error code
@@ -84,8 +85,11 @@ const Login = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Sign In</title>
+            </Helmet>
 
-            <div   className=" mt-10 bg-base-200 lg:mb-28">
+            <div className=" mt-10 bg-base-200 lg:mb-28">
                 <div className="flex-col">
                     <div className="text-center mb-6">
                         <h1 className="text-3xl font-bold">Login now!</h1>

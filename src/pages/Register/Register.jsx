@@ -4,6 +4,7 @@ import Swal from "sweetalert2";
 import useAuth from "../../Hooks/useAuth";
 import { useState } from "react";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 
 
 
@@ -18,7 +19,7 @@ const Register = () => {
 
     useEffect(() => {
         if (registerError) {
-            Swal.close(); 
+            Swal.close();
             Swal.fire(
                 'Sorry!',
                 `${registerError}`,
@@ -92,7 +93,10 @@ const Register = () => {
 
     return (
         <div>
-           
+            <Helmet>
+                <title>Register</title>
+            </Helmet>
+
             <div className=" mt-10 bg-base-200 lg:mb-10">
                 <div className="flex-col">
                     <div className="text-center mb-6">

@@ -3,6 +3,7 @@ import useAuth from "../../Hooks/useAuth";
 import BookingDetails from "./BookingDetails";
 import Swal from "sweetalert2";
 import moment from "moment";
+import { Helmet } from "react-helmet";
 
 const Bookings = () => {
     const { user } = useAuth();
@@ -167,6 +168,9 @@ const Bookings = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Bookings</title>
+            </Helmet>
             {bookings.length > 0 && (
                 <p className="text-center my-6">Total Price: {calculateTotalPrice(bookings)}</p>
             )}
