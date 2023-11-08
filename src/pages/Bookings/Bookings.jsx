@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import useAuth from "../../Hooks/useAuth";
 import BookingDetails from "./BookingDetails";
 import Swal from "sweetalert2";
+import moment from "moment";
 
 const Bookings = () => {
     const { user } = useAuth();
@@ -29,7 +30,22 @@ const Bookings = () => {
     };
 
 
-    const handleDelete = id => {
+
+    const handleDelete = async (id, date) => {
+        const bookingDate = new Date(date);
+        const currentDate = new Date();
+        const timeDifference = bookingDate - currentDate;
+        const hoursDifference = Math.floor(timeDifference / 1000 / 60 / 60);
+
+        if (hoursDifference < 24) {
+            Swal.fire({
+                title: 'Error',
+                text: 'You cannot delete a booking less than 24 hours before the booked date.',
+                icon: 'error',
+            });
+            return;
+        }
+
         Swal.fire({
             title: 'Are you sure?',
             text: "You won't be able to revert this!",
@@ -37,38 +53,87 @@ const Bookings = () => {
             showCancelButton: true,
             confirmButtonColor: '#3085d6',
             cancelButtonColor: '#d33',
-            confirmButtonText: 'Yes, delete it!'
-        }).then((result) => {
+            confirmButtonText: 'Yes, delete it!',
+        }).then(async (result) => {
             if (result.isConfirmed) {
+                try {
+                    const response = await fetch(`http://localhost:5000/bookings/${id}`, {
+                        method: 'DELETE',
+                    });
+                    const data = await response.json();
 
-                fetch(`http://localhost:5000/bookings/${id}`, {
-                    method: 'DELETE'
-                })
-                    .then(res => res.json())
-                    .then(data => {
-                        console.log(data);
-                        if (data.deletedCount > 0) {
-                            Swal.fire('Deleted successfully', '', 'success');
-                            const remaining = bookings.filter(booking => booking._id !== id);
-                            setBookings(remaining);
-                        }
-                    })
-
-
+                    if (data.deletedCount > 0) {
+                        Swal.fire('Deleted successfully', '', 'success');
+                        const remaining = bookings.filter((booking) => booking._id !== id);
+                        setBookings(remaining);
+                    } else {
+                        Swal.fire('Error', 'Failed to delete the booking. Please try again.', 'error');
+                    }
+                } catch (error) {
+                    console.error('Error deleting booking:', error);
+                    Swal.fire('Error', 'Failed to delete the booking. Please try again.', 'error');
+                }
             }
-        })
+        });
+    };
+
+    const isRoomAvailable = async (roomId, selectedDate) => {
+        try {
+            const response = await fetch(`http://localhost:5000/bookings?roomId=${roomId}&selectedDate=${selectedDate}`);
+            const data = await response.json();
+
+            if (Array.isArray(data)) {
+                const matchingBookings = data.filter((booking) => {
+                    const bookingDate = moment(booking.date);
+                    return booking.room_id === roomId && bookingDate.isSame(selectedDate, 'day');
+                });
+                if (matchingBookings.length > 0) {
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+
+            return false;
+        } catch (error) {
+            console.error('Error checking room availability:', error);
+            return false;
+        }
+    };
+
+    const handleUpdateDate = async (id, newDate) => {
+
+        const currentDate = moment();
+        const selectedDate = moment(newDate);
 
 
+        if (selectedDate.isBefore(currentDate, 'day')) {
+            Swal.fire({
+                title: 'Error',
+                text: 'You cannot update to a date in the past.',
+                icon: 'error',
+            });
+            return;
+        }
 
-    }
+        const isAvailable = await isRoomAvailable(id, selectedDate);
 
-    const handleUpdateDate = (id, newDate) => {
+        if (!isAvailable) {
+            Swal.fire({
+                title: 'Error',
+                text: 'The room is already booked on this date. Please choose another date.',
+                icon: 'error',
+            });
+            return;
+        }
+
+
         fetch(`http://localhost:5000/bookings/${id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json',
             },
-            body: JSON.stringify({ date: newDate }), 
+            body: JSON.stringify({ date: newDate }),
         })
             .then((res) => res.json())
             .then((data) => {

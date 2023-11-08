@@ -6,6 +6,7 @@ import { GrDriveCage } from "react-icons/gr";
 import { AiOutlineStar } from "react-icons/ai";
 import Swal from "sweetalert2";
 import useAuth from "../../Hooks/useAuth";
+import moment from "moment";
 
 
 const RoomDetails = () => {
@@ -19,8 +20,56 @@ const RoomDetails = () => {
 
 
 
+    const isRoomAvailable = async (roomId, selectedDate) => {
+        try {
+            const response = await fetch(`http://localhost:5000/bookings?roomId=${roomId}&selectedDate=${selectedDate}`);
+            const data = await response.json();
 
-    const handleBookNow = () => {
+            if (Array.isArray(data)) {
+                const matchingBookings = data.filter((booking) => {
+                    const bookingDate = moment(booking.date);
+                    return booking.room_id === roomId && bookingDate.isSame(selectedDate, 'day');
+                });
+                if (matchingBookings.length > 0) {
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+
+            return false;
+        } catch (error) {
+            console.error('Error checking room availability:', error);
+            return false;
+        }
+    };
+
+
+    const handleBookNow = async () => {
+
+
+        const selectedDate = new Date(bookingDate);
+        const currentDate = new Date();
+
+        if (selectedDate < currentDate) {
+            Swal.fire({
+                title: 'Error',
+                text: 'Selected date must be in the present or future.',
+                icon: 'error',
+            });
+            return;
+        }
+
+        const isAvailable = await isRoomAvailable(_id, selectedDate);
+
+        if (!isAvailable) {
+            Swal.fire({
+                title: 'Error',
+                text: 'Already booked.',
+                icon: 'error',
+            });
+            return;
+        }
 
         const date = bookingDate;
         const email = user?.email;
@@ -92,7 +141,6 @@ const RoomDetails = () => {
                 }
 
             </Marquee>
-
 
 
             <div className="grid md:grid-cols-3 grid-cols-1 gap-6 w-3/4 mx-auto mb-5">

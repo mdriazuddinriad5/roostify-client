@@ -50,9 +50,6 @@ const Rooms = () => {
                         </Room>)
                 }
             </div>
-            <div className="flex justify-center">
-                <button className="btn ">Show All</button>
-            </div>
         </div>
     );
 };

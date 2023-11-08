@@ -71,7 +71,7 @@ const BookingDetails = ({ booking, handleDelete, handleUpdateDate }) => {
 
                         </div>
 
-                        <button onClick={() => handleDelete(_id)} className="btn absolute right-0 md:bottom-0 top-28 md:top-0">Delete</button>
+                        <button onClick={() => handleDelete(_id, date)} className="btn absolute right-0 md:bottom-0 top-28 md:top-0">Delete</button>
 
                     </div>
                 </div>
