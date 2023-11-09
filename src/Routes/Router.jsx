@@ -8,6 +8,8 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import PrivateRoute from "./PrivateRouter";
 import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import FAQ from "../pages/FAQ/FAQ";
+import AboutUs from "../pages/AboutUs/AboutUs";
 
 
 
@@ -28,7 +30,7 @@ const Router = createBrowserRouter([
             {
                 path: '/roomDetails/:id',
                 element: <RoomDetails></RoomDetails>,
-                loader: ({ params }) => fetch(`http://localhost:5000/rooms/${params.id}`)
+                loader: ({ params }) => fetch(`https://roostify-server.vercel.app/rooms/${params.id}`)
             },
             {
                 path: '/bookings',
@@ -41,6 +43,14 @@ const Router = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register></Register>
+            },
+            {
+                path: '/faq',
+                element: <FAQ></FAQ>
+            },
+            {
+                path:'/about',
+                element: <AboutUs></AboutUs>
             }
         ])
     }

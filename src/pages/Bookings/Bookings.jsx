@@ -10,7 +10,7 @@ const Bookings = () => {
     const [bookings, setBookings] = useState([]);
     const [noFound, setNoFound] = useState('');
 
-    const url = `http://localhost:5000/bookings?email=${user?.email}`
+    const url = `https://roostify-server.vercel.app/bookings?email=${user?.email}`
 
     useEffect(() => {
         fetch(url, { credentials: 'include' })
@@ -58,7 +58,7 @@ const Bookings = () => {
         }).then(async (result) => {
             if (result.isConfirmed) {
                 try {
-                    const response = await fetch(`http://localhost:5000/bookings/${id}`, {
+                    const response = await fetch(`https://roostify-server.vercel.app/bookings/${id}`, {
                         method: 'DELETE',
                     });
                     const data = await response.json();
@@ -80,7 +80,7 @@ const Bookings = () => {
 
     const isRoomAvailable = async (roomId, selectedDate) => {
         try {
-            const response = await fetch(`http://localhost:5000/bookings?roomId=${roomId}&selectedDate=${selectedDate}`,  { credentials: 'include' });
+            const response = await fetch(`https://roostify-server.vercel.app/booking?roomId=${roomId}&selectedDate=${selectedDate}`, { credentials: 'include' });
             const data = await response.json();
 
             if (Array.isArray(data)) {
@@ -129,7 +129,7 @@ const Bookings = () => {
         }
 
 
-        fetch(`http://localhost:5000/bookings/${id}`, {
+        fetch(`https://roostify-server.vercel.app/bookings/${id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json',
@@ -175,10 +175,10 @@ const Bookings = () => {
                 <p className="text-center my-6">Total Price: {calculateTotalPrice(bookings)}</p>
             )}
             {noFound ? (
-                <p className="h-[80vh] flex justify-center items-center">{noFound}</p>
+                <p className=" flex justify-center items-center">{noFound}</p>
             ) : (
                 <div>
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 w-5/6 mx-auto py-8 lg:py-12">
+                    <div className="grid grid-cols-1 md:hidden gap-6 w-5/6 mx-auto py-8 lg:py-12">
                         {
                             bookings.map(booking => <BookingDetails
                                 key={booking._id}
@@ -187,6 +187,33 @@ const Bookings = () => {
                                 handleUpdateDate={handleUpdateDate}
                             ></BookingDetails>)
                         }
+                    </div>
+
+                    <div className="hidden md:inline-table overflow-x-auto w-full h-[80vh]">
+                        <table className="table w-full">
+                            {/* head */}
+                            <thead>
+                                <tr>
+                                    <th>Room Number</th>
+                                    <th>Image</th>
+                                    <th>Date</th>
+                                    <th>Price</th>
+                                    <th>Update Booking Date</th>
+                                    <th>Delete</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {
+                                    bookings.map(booking => <BookingDetails
+                                        key={booking._id}
+                                        handleDelete={handleDelete}
+                                        booking={booking}
+                                        handleUpdateDate={handleUpdateDate}
+                                    ></BookingDetails>)
+                                }
+                            </tbody>
+
+                        </table>
                     </div>
                 </div>
             )}

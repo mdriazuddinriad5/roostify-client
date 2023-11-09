@@ -9,7 +9,7 @@ const Rooms = () => {
     const [sortBy, setSortBy] = useState([]);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/rooms', { withCredentials: true })
+        axios.get('https://roostify-server.vercel.app/rooms', { withCredentials: true })
             .then(res => {
                 setRooms(res.data)
             })

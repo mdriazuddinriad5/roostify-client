@@ -25,8 +25,9 @@ const BookingDetails = ({ booking, handleDelete, handleUpdateDate }) => {
     };
 
     return (
-        <div>
-            <div className="flex items-center rounded-lg">
+        <>
+            {/* for smaller devices */}
+            <div className="md:hidden flex items-center rounded-lg">
                 <div className="relative flex w-full max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
                     <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
                         <img
@@ -80,7 +81,57 @@ const BookingDetails = ({ booking, handleDelete, handleUpdateDate }) => {
 
             </div>
 
-        </div>
+            {/* for medium and larger devices */}
+
+            <tr className="hidden md:table-row">
+                <td>
+                    {roomNumber}
+                </td>
+                <td>
+                    <div className="avatar">
+                        <div className="rounded w-24 h-24">
+                            {img && <img src={img} alt="Avatar Tailwind CSS Component" />}
+                        </div>
+                    </div>
+                </td>
+
+                <td>{date}</td>
+                <td>${price}</td>
+                <th>
+
+                    {
+                        isEditing ? (
+                            <div>
+                                <input
+                                    type="date"
+                                    value={newDate}
+                                    onChange={(e) => setNewDate(e.target.value)}
+                                />
+                                <span onClick={handleDateUpdate} className="font-bold text-primary">
+                                    Update
+                                </span>
+                            </div>
+                        ) :
+                            (
+                                <button
+                                    onClick={() => setIsEditing(true)}
+                                    className="btn btn-ghost btn-xs"
+                                >
+                                    Update Booking Date
+                                </button>
+                            )}
+
+                </th>
+                <th>
+                    <button onClick={() => handleDelete(_id, date)} className="btn btn-sm btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /></svg>
+                    </button>
+                </th>
+            </tr >
+
+        </>
+
+
     );
 };
 

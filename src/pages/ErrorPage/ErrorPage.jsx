@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import error from "../../assets/dribbble-3_still_2x.gif";
+import { Helmet } from "react-helmet";
 
 const ErrorPage = () => {
     const navigate = useNavigate();
@@ -8,6 +9,9 @@ const ErrorPage = () => {
     }
     return (
         <div className="h-screen ">
+            <Helmet>
+                <title>Error 404</title>
+            </Helmet>
             <div className="flex justify-center">
                 <img src={error} alt="" />
             </div>

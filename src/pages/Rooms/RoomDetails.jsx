@@ -8,10 +8,11 @@ import Swal from "sweetalert2";
 import useAuth from "../../Hooks/useAuth";
 import moment from "moment";
 import Review from "./Review";
+import { Helmet } from "react-helmet";
 
 
 const RoomDetails = () => {
-    const { _id, roomNumber, roomDescription, pricePerNight, roomSize, availability, roomImages, specialOffers, date, review } = useLoaderData();
+    const { _id, roomNumber, roomDescription, pricePerNight, roomSize, availability, roomImages, specialOffers, date } = useLoaderData();
 
     const { user } = useAuth();
     const navigate = useNavigate();
@@ -23,7 +24,7 @@ const RoomDetails = () => {
 
     const isRoomAvailable = async (roomId, selectedDate) => {
         try {
-            const response = await fetch(`http://localhost:5000/bookings?roomId=${roomId}&selectedDate=${selectedDate}`, { credentials: 'include' });
+            const response = await fetch(`https://roostify-server.vercel.app/booking?roomId=${roomId}&selectedDate=${selectedDate}`);
             const data = await response.json();
 
             if (Array.isArray(data)) {
@@ -109,7 +110,7 @@ const RoomDetails = () => {
             }).then((result) => {
                 if (result.isConfirmed) {
 
-                    fetch('http://localhost:5000/bookings', {
+                    fetch('https://roostify-server.vercel.app/bookings', {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json'
@@ -147,6 +148,8 @@ const RoomDetails = () => {
     };
 
 
+
+
     const handleReviewSubmit = async (e) => {
         e.preventDefault();
 
@@ -159,13 +162,15 @@ const RoomDetails = () => {
             });
             return;
         }
-        fetch('http://localhost:5000/reviews', {
+
+        const reviewWithRoomId = { ...reviewData, roomId: _id };
+
+        fetch(`https://roostify-server.vercel.app/reviews/${_id}`, {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(reviewData),
-
+            body: JSON.stringify(reviewWithRoomId),
         })
             .then(res => res.json())
             .then(data => {
@@ -182,23 +187,26 @@ const RoomDetails = () => {
                         comment: ''
                     });
                 }
-            })
-
-
+            });
     };
-
 
     const [reviews, setReviews] = useState([]);
 
+
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch(`https://roostify-server.vercel.app/reviews/${_id}`)
             .then(res => res.json())
             .then(data => setReviews(data))
-    }, [])
+    }, [_id]);
+
 
 
     return (
         <div>
+
+            <Helmet>
+                <title>Room | Details</title>
+            </Helmet>
 
             <Marquee>
                 {
@@ -246,7 +254,7 @@ const RoomDetails = () => {
                             <p>Room Size: {roomSize} sq.ft</p>
                             <p>Special Offers: {specialOffers}</p>
                             <p>Date: {date}</p>
-                            <p>Review {review}</p>
+                            <p>Review Count: {reviews.length}</p>
                             <p>Availability: {availability}</p>
                             <p>Price per night: {pricePerNight}</p>
                         </div>
